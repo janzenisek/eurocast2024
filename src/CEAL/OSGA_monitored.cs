@@ -1,4 +1,4 @@
-﻿using DAT.Communication;
+﻿using Ai.Hgb.Dat.Communication;
 using System;
 using System.Collections.Generic;
 using System.Linq;

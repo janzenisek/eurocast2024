@@ -1,5 +1,5 @@
-﻿using DAT.Communication;
-using DAT.Configuration;
+﻿using Ai.Hgb.Dat.Communication;
+using Ai.Hgb.Dat.Configuration;
 using System;
 
 namespace CEAL.Main {
@@ -12,9 +12,8 @@ namespace CEAL.Main {
       HostAddress address = new HostAddress("127.0.0.1", 1883);
       var converter = new JsonPayloadConverter();
 
-      MqttBroker broker = new MqttBroker(address);
+      //MqttBroker broker = new MqttBroker(address, true, true, 5000, "mqtt");
       //broker.StartUp();
-      broker.StartUpWebsocket();
 
       ISocket socket1 = new MqttSocket("socket1", "socket1", address, converter, connect: true);
       ISocket socket2 = new MqttSocket("socket2", "socket2", address, converter, connect: true);
@@ -37,7 +36,7 @@ namespace CEAL.Main {
       Task.Delay(1000).Wait();
       socket1.Disconnect();
       socket2.Disconnect();
-      broker.TearDown();
+      //broker.TearDown();
 
 
       var problem = new Rastrigin(problemSize: 100);

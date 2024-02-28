@@ -1,8 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>CEAL.$(MSBuildProjectName)</AssemblyName>
@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DAT.Communication" Version="1.0.0" />
-    <PackageReference Include="DAT.Configuration" Version="1.0.0" />
-    <PackageReference Include="DAT.Utils" Version="1.0.0" />
+    <PackageReference Include="Ai.Hgb.Dat.Communication" Version="0.1.5-prerelease-g6a7b89bf94" />
+    <PackageReference Include="Ai.Hgb.Dat.Configuration" Version="0.1.5-prerelease-gebc7d23a1b" />
+    <PackageReference Include="Ai.Hgb.Dat.Utils" Version="0.1.4-prerelease-gebc7d23a1b" />
   </ItemGroup>
 
 </Project>
